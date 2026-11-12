@@ -19,7 +19,7 @@ Use só as ferramentas que existem. Se não há ferramenta para criar bots, vá 
 Para cada papel ativo em `config/projeto.json`, **incluindo a Coordenação**, crie um bot:
 
 - **Nome:** o nome escolhido pelo dono (`agentes.<chave>.nome`).
-- **Pasta de trabalho:** a raiz deste repositório, compartilhada por todos os bots.
+- **Pasta de trabalho:** a pasta do estúdio (a raiz deste repositório), compartilhada por todos os bots. Use o caminho completo dela. Se o runtime não tem o conceito de pasta de trabalho, escreva o caminho completo nas instruções de cada bot, no lugar de "a raiz do estúdio".
 - **Instruções**, se o bot consegue ler arquivos da pasta:
 
 ```text
