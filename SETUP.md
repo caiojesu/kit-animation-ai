@@ -1,6 +1,6 @@
 # Setup do estúdio
 
-> **Para quem vai usar o kit:** abra o seu agente (Claude Code, Cursor, Codex, OpenBot ou outro) na pasta deste repositório e diga: **"Leia o SETUP.md e siga as instruções."**
+> **Para quem vai usar o kit:** se você ainda não baixou o kit, use o prompt de `PROMPT.md`, que faz o agente baixar tudo sozinho. Se já baixou, abra o seu agente (Claude Code, Cursor, Codex, OpenBot ou outro) nesta pasta e diga: **"Leia o SETUP.md e siga as instruções."**
 >
 > O restante deste arquivo é escrito para o agente.
 

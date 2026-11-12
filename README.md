@@ -4,11 +4,13 @@ Um repositório-modelo para montar um estúdio de animação operado por agentes
 
 ## Como começar
 
-1. Clone ou baixe este repositório. Cada cópia é um estúdio: para um segundo perfil, faça outra cópia em outra pasta.
-2. Abra o seu agente na pasta do repositório (Claude Code, Cursor, Codex, OpenBot ou outro).
-3. Diga:
+Você não precisa baixar o repositório nem saber usar git.
 
-> Leia o SETUP.md e siga as instruções.
+1. Crie uma pasta vazia para o seu estúdio. Cada pasta é um estúdio: para um segundo perfil, crie outra.
+2. Abra o seu agente nessa pasta (Claude Code, Cursor, Codex, OpenBot ou outro que rode comandos).
+3. Cole o prompt de [PROMPT.md](PROMPT.md).
+
+O agente baixa o kit sozinho, com git se houver ou pelo zip do GitHub se não houver, e segue para o setup. Se você já baixou o repositório à mão, abra o agente na pasta e diga "Leia o SETUP.md e siga as instruções".
 
 O agente detecta em qual runtime está, faz uma entrevista curta sobre a intenção do estúdio (oito blocos, uma pergunta por vez, sempre com uma recomendação), preenche o `ESTUDIO.md` e cria os agentes. No fim, ele entrega o pedido do primeiro piloto, pronto para copiar.
 
@@ -66,7 +68,8 @@ As chaves `piloto_aprovado` e `rotina_autorizada` ficam em `config/projeto.json`
 ## Estrutura
 
 ```
-SETUP.md            o prompt de instalação
+PROMPT.md           o prompt que baixa o kit e inicia o setup
+SETUP.md            as instruções de instalação que o agente segue
 ESTUDIO.md          as decisões vigentes do estúdio (o arquivo que manda)
 AGENTS.md           orientação que os agentes leem ao abrir a pasta
 config/projeto.json configuração, tetos e chaves de operação
@@ -107,6 +110,8 @@ Isso gera áudios de teste no lugar da voz e renderiza um episódio de exemplo e
 | Base de render: cenas, personagens, boca, legenda, master de áudio, quadros | Testada com o episódio de exemplo, no Windows, com Node 25 e Remotion 4.0 |
 | Setup no Claude Code | Os passos foram executados uma vez por quem escreveu o kit, com um estúdio fictício. Falta rodar em uma sessão nova, com entrevista real, e confirmar que os subagentes são carregados |
 | Conversor de alinhamento para tempos | Testado com um alinhamento de exemplo |
+| Download do kit pelo zip, sem git | Testado: o zip baixa sem login e traz a estrutura completa |
+| Prompt de instalação executado por um agente em pasta vazia | Não testado |
 | Voz pelo ElevenLabs | Não testada. Valide no primeiro piloto |
 | Criação de bots no OpenBot e similares | Não testada |
 | Subagentes no Cursor e no Codex | Não testados |

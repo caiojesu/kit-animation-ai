@@ -22,6 +22,7 @@ Se você foi chamado como Arte, Produção, Revisão ou Publicação, leia `agen
 
 | Onde | O quê |
 |---|---|
+| `PROMPT.md` | O prompt que baixa o kit e inicia o setup, para quem ainda não tem a pasta |
 | `ESTUDIO.md` | Decisões vigentes: objetivo, fontes, formatos, identidade, limites, qualidade, operação |
 | `config/projeto.json` | Configuração: agentes, vídeo, voz, tetos, chaves de operação |
 | `agentes/` | Instruções de cada papel |
