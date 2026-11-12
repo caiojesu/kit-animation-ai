@@ -1,0 +1,72 @@
+{
+  "episodio": "exemplo",
+  "formato": "V",
+  "cenas": [
+    {
+      "id": "c1",
+      "cenario": "render/exemplo/cenarios/fundo.svg",
+      "elementos": [
+        {
+          "id": "titulo",
+          "tipo": "texto",
+          "texto": "Episódio de exemplo",
+          "x": 540,
+          "y": 420,
+          "tamanho": 92,
+          "fundo": "#FFFFFF",
+          "entrada": { "tipo": "pop", "aos": 0 }
+        },
+        {
+          "id": "boneco",
+          "tipo": "personagem",
+          "personagem": "render/exemplo/personagens/boneco",
+          "x": 540,
+          "y": 1560,
+          "escala": 1.3,
+          "entrada": { "tipo": "sobe", "aos": 0 }
+        }
+      ],
+      "falas": [
+        {
+          "id": "f1",
+          "quem": "boneco",
+          "texto": "Este é o episódio de exemplo do kit.",
+          "audio": "render/exemplo/audio/f1.wav",
+          "tempos": "render/exemplo/audio/f1.json"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "corDeFundo": "#DCEBF5",
+      "elementos": [
+        {
+          "id": "boneco",
+          "tipo": "personagem",
+          "personagem": "render/exemplo/personagens/boneco",
+          "x": 380,
+          "y": 1560,
+          "escala": 1.1,
+          "entrada": { "tipo": "desliza-esquerda", "aos": 0 }
+        },
+        {
+          "id": "selo",
+          "tipo": "imagem",
+          "src": "render/exemplo/assets/selo.svg",
+          "x": 800,
+          "y": 760,
+          "largura": 320,
+          "entrada": { "tipo": "pop", "aos": "f2" }
+        }
+      ],
+      "falas": [
+        {
+          "id": "f2",
+          "quem": "boneco",
+          "texto": "Se você está vendo isso, o render funciona.",
+          "audio": "render/exemplo/audio/f2.wav"
+        }
+      ]
+    }
+  ]
+}

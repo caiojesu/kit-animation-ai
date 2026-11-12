@@ -1,0 +1,99 @@
+{
+  "versao_kit": "0.1.0",
+  "estudio": {
+    "nome": "",
+    "idioma": "pt-BR",
+    "pais": "BR",
+    "configurado": false,
+    "configurado_em": null
+  },
+  "runtime": {
+    "tipo": "",
+    "modo": "",
+    "agentes_criados": false
+  },
+  "agentes": {
+    "coordenacao": { "nome": "Coordenação", "ativo": true },
+    "arte": { "nome": "Arte", "ativo": true },
+    "producao": { "nome": "Produção", "ativo": true },
+    "revisao": { "nome": "Revisão", "ativo": true },
+    "publicacao": { "nome": "Publicação", "ativo": false }
+  },
+  "video": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30,
+    "poses_por_segundo": 12
+  },
+  "audio": {
+    "lufs_alvo": -14,
+    "pico_maximo_dbtp": -1.5
+  },
+  "legenda": {
+    "ativa": true,
+    "fonte": "Arial, Helvetica, sans-serif",
+    "tamanho": 68,
+    "cor": "#FFFFFF",
+    "cor_destaque": "#FFD84D",
+    "contorno": "#111111",
+    "posicao_y": 1480,
+    "max_caracteres": 18
+  },
+  "arte": {
+    "estilo": "papel-recortado",
+    "origem": "vetor-agente"
+  },
+  "voz": {
+    "provedor": "elevenlabs",
+    "modelo": "eleven_v3",
+    "entrega_tempos": true,
+    "vozes": {}
+  },
+  "formatos_ativos": ["V", "L", "H"],
+  "formato_do_piloto": "",
+  "revisao": {
+    "rodadas_maximas_roteiro": 2,
+    "rodadas_maximas_corte": 2
+  },
+  "operacao": {
+    "piloto_aprovado": false,
+    "rotina_autorizada": false,
+    "meta_videos_dia": 0,
+    "tamanho_lote": 0,
+    "intervalo_repeticao_tema_dias": 14,
+    "max_episodios_escalados": 3
+  },
+  "tetos": {
+    "moeda": "BRL",
+    "custo_por_video": null,
+    "custo_por_dia": null,
+    "creditos_voz_por_video": 1000,
+    "disco_gb": 20,
+    "renders_simultaneos": 1
+  },
+  "publicacao": {
+    "ativa": false,
+    "ferramenta": "",
+    "autorizacao": {
+      "registrada_em": null,
+      "registrada_por": null,
+      "contas": [],
+      "redes": [],
+      "posts_por_dia_por_rede": 0
+    },
+    "nao_repetir_entre_redes_no_mesmo_dia": true,
+    "avisar_coordenacao_acima_de_views": null
+  },
+  "padroes_nao_revisados": [
+    "operacao.meta_videos_dia",
+    "operacao.tamanho_lote",
+    "operacao.intervalo_repeticao_tema_dias",
+    "operacao.max_episodios_escalados",
+    "tetos.custo_por_dia",
+    "tetos.creditos_voz_por_video",
+    "revisao.rodadas_maximas_roteiro",
+    "revisao.rodadas_maximas_corte",
+    "legenda",
+    "publicacao"
+  ]
+}

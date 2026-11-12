@@ -1,0 +1,14 @@
+{
+  "atualizado_em": null,
+  "proximo_numero": 1,
+  "rotina": {
+    "ultimo_ciclo_em": null,
+    "parada": null
+  },
+  "gastos": {
+    "dia": null,
+    "custo_no_dia": 0,
+    "creditos_voz_no_dia": 0
+  },
+  "episodios": []
+}

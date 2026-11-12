@@ -1,0 +1,26 @@
+{
+  "nome": "Boneco de exemplo",
+  "largura": 500,
+  "altura": 800,
+  "pecas": [
+    { "id": "corpo", "tipo": "fixa", "src": "corpo.svg", "x": 0, "y": 0, "largura": 500, "z": 0 },
+    {
+      "id": "olhos",
+      "tipo": "olhos",
+      "estados": { "abertos": "olhos-abertos.svg", "fechados": "olhos-fechados.svg" },
+      "x": 150,
+      "y": 200,
+      "largura": 200,
+      "z": 1
+    },
+    {
+      "id": "boca",
+      "tipo": "boca",
+      "estados": { "fechada": "boca-fechada.svg", "meia": "boca-meia.svg", "aberta": "boca-aberta.svg" },
+      "x": 190,
+      "y": 290,
+      "largura": 120,
+      "z": 1
+    }
+  ]
+}

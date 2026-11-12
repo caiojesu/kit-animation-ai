@@ -1,0 +1,28 @@
+# Pacotes e arquivos temporários do render
+node_modules/
+render/.publico/
+render/exemplo/audio/
+render/exemplo/corte/
+
+# Arquivos pesados: o repositório versiona roteiros, storyboards e pareceres,
+# não os vídeos. Em modo automático, os vídeos chegam rápido a dezenas de GB.
+*.mp4
+*.mov
+*.webm
+*.wav
+episodios/*/corte/
+entregas/*/video.*
+
+# Material bruto de fontes (vídeos baixados na decupagem)
+fontes/bruto/
+
+# Segredos: chaves de API ficam no runtime ou em variáveis de ambiente
+.env
+.env.*
+
+# Saída colável gerada pelo setup para runtimes sem ferramenta de criação
+adaptadores/saida/
+
+# Sistema
+.DS_Store
+Thumbs.db
